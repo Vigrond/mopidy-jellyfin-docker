@@ -1,0 +1,6 @@
+Mopidy-Jellyfin == 1.0.6
+mopidy-mpd == 4.0.0
+Mopidy-MusicBox-Webclient == 3.1.0
+
+PyGObject
+setuptools < 81.0.0
