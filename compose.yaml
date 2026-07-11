@@ -1,0 +1,14 @@
+services:
+  mopidy:
+    build:
+      context: .
+    container_name: mopidy
+    volumes:
+      - ./mopidy.conf:/etc/mopidy/mopidy.conf
+    user: root
+    ports:
+      - "6680:6680"
+      - "6600:6600"
+    devices:
+      - "/dev/snd:/dev/snd"
+    restart: unless-stopped
